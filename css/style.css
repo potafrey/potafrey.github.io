@@ -1,0 +1,96 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styles */
+body {
+  height: 100vh;
+  background: #eff5f5;
+}
+
+/* Navigation Styles */
+.nav-links {
+  position: absolute;
+  top: 0px; /* Adjust the distance from the top */
+  left: 0px; /* Adjust the distance from the left */
+  right: 0px; /* Adjust the distance from the right */
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 0px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.nav-links li a {
+  position: relative;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+}
+
+.nav-links li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #083733;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.nav-links li a:hover:before {
+  width: 100%;
+}
+
+.nav-links li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.name {
+  position: relative;
+  color: rgb(6, 15, 84);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 3px 0;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.social {
+  position: absolute;
+  top: 15px;
+  right: 120px;
+}
+
+.social li {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.social li a {
+  position: relative;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.social a:visited{
+  color: inherit;
+}
