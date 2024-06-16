@@ -13,37 +13,42 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #eff5f5;
+  background: linear-gradient(to right, #fff0c9, #d9e6f2); /* Creamy gradient colors */
+  color: #333; /* Adjust text color for readability */
   overflow-x: hidden;
 }
 
 /* Navigation Styles */
-.nav-links {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left {
   display: flex;
   align-items: center;
-  background: #fff;
-  padding: 10px 20px;
-  border-radius: 0px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
 }
 
 .nav-links li {
-  list-style: none;
-  margin: 0 12px;
+  margin: 0 20px;
 }
 
 .nav-links li a {
   position: relative;
   color: #333;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  padding: 6px 0;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a:before {
@@ -51,10 +56,10 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 3px;
+  height: 2px;
   width: 0%;
-  background: #083733;
-  border-radius: 12px;
+  background: #00bcd4;
+  border-radius: 2px;
   transition: all 0.4s ease;
 }
 
@@ -62,36 +67,30 @@ body {
   width: 100%;
 }
 
-.nav-links li.center a:before {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .name {
-  position: relative;
-  color: rgb(6, 12, 55);
-  font-size: 20px;
+  color: #333;
+  font-size: 24px;
   font-weight: bold;
-  padding: 3px 0;
+  padding: 3px 10px;
   text-decoration: none;
   pointer-events: none;
 }
 
 .social {
-  position: absolute;
-  top: 15px;
-  right: 120px;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
 .social li {
-  list-style: none;
-  margin: 0 12px;
+  margin: 0 10px;
 }
 
 .social li a {
   position: relative;
   padding: 10px 0;
   text-decoration: none;
+  color: #333;
 }
 
 .social a:visited {
@@ -124,8 +123,8 @@ body {
 }
 
 .Graduate {
-  animation-delay: 2.5s; /* Adjust delay to sequence properly */
-  font-size: 20px; 
+  animation-delay: 2.5s;
+  font-size: 20px;
 }
 
 .fade-in {
