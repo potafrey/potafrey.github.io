@@ -33,6 +33,11 @@ body {
   align-items: center;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -88,7 +93,6 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-  margin-right: 20px; /* Add margin for spacing */
 }
 
 .social li {
@@ -183,7 +187,7 @@ p {
   .social {
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 50px; /* Adjust position for alignment */
   }
 
   .name {
