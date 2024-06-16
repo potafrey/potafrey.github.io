@@ -22,3 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const introParagraph = document.querySelector('#intro p');
   observer.observe(introParagraph);
 });
+
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
