@@ -36,16 +36,17 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
+  margin-left: 20px; /* Add margin for spacing */
 }
 
 .nav-links li {
-  margin: 0 20px;
+  margin: 0 10px; /* Adjust margin for spacing */
 }
 
 .nav-links li a {
   position: relative;
   color: #333;
-  font-size: 18px;
+  font-size: 16px; /* Reduce font size for mobile */
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -69,7 +70,7 @@ body {
 
 .name {
   color: #333;
-  font-size: 24px;
+  font-size: 20px; /* Adjust font size for mobile */
   font-weight: bold;
   padding: 3px 10px;
   text-decoration: none;
@@ -80,10 +81,11 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
+  margin-right: 20px; /* Add margin for spacing */
 }
 
 .social li {
-  margin: 0 10px;
+  margin: 0 10px; /* Adjust margin for spacing */
 }
 
 .social li a {
@@ -124,7 +126,7 @@ body {
 
 .Graduate {
   animation-delay: 2.5s;
-  font-size: 20px;
+  font-size: 18px; /* Adjust font size for mobile */
 }
 
 .fade-in {
@@ -137,17 +139,47 @@ body {
 h1 {
   text-align: center;
   margin-top: 100px;
-  font-size: 3em;
+  font-size: 2.5em; /* Adjust font size for mobile */
 }
 
 p {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em; /* Adjust font size for mobile */
   margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hi, .im-jeffrey, .Graduate, .fade-in {
-    animation: none;
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links by default on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex; /* Show nav links when active */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .social {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .name {
+    font-size: 18px; /* Adjust font size for mobile */
+  }
+
+  h1 {
+    font-size: 2em; /* Adjust font size for mobile */
   }
 }
