@@ -19,22 +19,82 @@
         <li class="center"><a href="projects.html">Projects</a></li>
       </ul>
     </div>
-    <div class="nav-right">
-      <ul class="social">
-        <li><a href="https://www.linkedin.com/in/jeffreychanzp/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
-        <li><a href="https://github.com/potafrey" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
-        <li><a href="https://instagram.com/potafrey" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
-      </ul>
-      <div class="hamburger-menu" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </div>
+    <ul class="social">
+      <li><a href="https://www.linkedin.com/in/jeffreychanzp/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+      <li><a href="https://github.com/potafrey" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+      <li><a href="https://instagram.com/potafrey" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+    </ul>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
     </div>
   </div>
 
   <!-- Intro Section -->
   <div id="intro">
-    <h1><span class="hi">Hi.</span> <span class="im-jeffrey">I'm Jeffrey.</span><br /><span class="Graduate">A Graduate from Singapore Management University.</span></h1>
+    <h1><span class="hi">Hi. <span class="im-jeffrey">I'm Jeffrey.</span><br /><span class="Graduate">A Graduate from Singapore Management University.</span></h1>
+    <div class="scroll-down">
+      <button class="scroll-button" onclick="scrollToSection('work')">Work Experience</button>
+      <button class="scroll-button" onclick="scrollToSection('education')">Education</button>
+    </div>
   </div>
+
+  <!-- Content Section -->
+  <div id="content">
+    <!-- Work Experience Section -->
+    <div id="work" class="section experience">
+      <h2>Work Experience</h2>
+      <div class="job">
+        <h3>Bentley Motors Asia Pacific</h3>
+        <h4>Business Analyst (Internship)<br />06/2023 - 12/2023</h4>
+        <p>Sales: <br/>
+          • Developed a fully functional sales and stock report to aid regional dealers in inventory planning and management <br/>
+          • Developed an opportunities funnel tool to identify new opportunities in individual markets through warranty campaigns <br/>
+          
+          Aftersales: <br/>
+          • Developed dashboards in PowerBI for aftersales performance analysis <br/>
+          • Performed individual dealer target setting through historical revenue analysis <br>
+          • Performed data analytics in various performance measures for the region <br/>
+          • Created an automated revenue competition tool for year end revenue uplift rally </p>
+      </div>
+      <div class="job">
+        <h3>Motorist Singapore Pte Ltd</h3>
+        <h4>Sales & Operations (Internship)<br />05/2022 - 07/2022</h4>
+        <p>• Conducted floor stock audits and valuations for existing dealers, resulting in accurate inventory records and improved dealer satisfaction. <br/>
+          • Conducted web scraping on key competitors and onboarded new dealers independently, creating a new database of potential clients within one week, resulting in increased sales opportunities.<br/>
+          • Revamped and automated both the invoicing and floor stock systems, reducing time spent on manual entries by 50%, resulting in increased efficiency and improved accuracy.<br/></p>
+      </div>
+      <div class="job">
+        <h3>Avantage VAG Singapore Pte Ltd</h3>
+        <h4>Service Advisor<br />05/2021 - 07/2021</h4>
+        <p>• Booked service appointments and provided advice and explanation onthe replacement of vehicle wear and tear parts, increasing customer satisfaction and positive online reviews. <br/>
+        • Successfully onboarded over 150 new clients onto the membership program, resulting in increased revenue and customer loyalty. <br/>
+        • Involved in the transition of invoicing software from Microsoft NAV to REACH, ensuring minimal disruption to business operations. <br/></p>
+        <h4>Motor Claims Executive<br />11/2019 - 07/2020</h4>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <div id="education" class="section education">
+      <h2>Education</h2>
+      <div class="school">
+        <h3>Singapore Management University</h3>
+        <p>WIP</p>
+      </div>
+      <!-- <div class="school">
+        <h3>WIP</h3>
+        <p>WIP</p>
+      </div>
+      <div class="school">
+        <h3>WIP</h3>
+        <p>WIP</p>
+      </div>
+      <div class="school">
+        <h3>WIP</h3>
+        <p>WIP</p> -->
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="back-to-top-btn" title="Go to top">&#8593; Back to Top</button>
 
   <script src="js/script.js"></script>
 </body>
