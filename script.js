@@ -47,5 +47,19 @@ document.addEventListener("DOMContentLoaded", function() {
     jobElement.classList.toggle('active');
     descriptionElement.style.display = descriptionElement.style.display === 'block' ? 'none' : 'block';
   }
-});
 
+  window.toggleEducationDescription = function(timelineItem) {
+    const descriptionElement = timelineItem.querySelector('.education-description');
+    timelineItem.classList.toggle('active');
+  
+    // Toggle max-height to show or hide description
+    if (timelineItem.classList.contains('active')) {
+      descriptionElement.style.maxHeight = descriptionElement.scrollHeight + 'px';
+    } else {
+      descriptionElement.style.maxHeight = '0';
+    }
+  }
+  
+  
+  
+});

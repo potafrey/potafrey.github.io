@@ -347,3 +347,93 @@ p {
   transition-duration: 2s;
 }
 
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #e9ecef;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -30px; /* Increase overlap to position higher */
+}
+
+.school-logo {
+  max-width: 60%; /* Responsive size */
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .school-logo {
+  transform: translateY(-8px);
+}
+
+.timeline-content {
+  padding: 10px 10px 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 30px; /* Add margin to prevent content overlap */
+}
+
+.timeline-content h3 {
+  margin-top: 10px;
+}
+
+.education-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.timeline-item.active .education-description {
+  max-height: 300px; /* Adjust based on content */
+}
+
+.timeline-item .dropdown-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item.active .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .school-logo {
+    width: 40px; /* Smaller size for logo on mobile */
+  }
+
+  .timeline-content {
+    padding: 30px 15px 15px; /* Adjust padding for mobile */
+  }
+}
