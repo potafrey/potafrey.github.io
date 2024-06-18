@@ -325,7 +325,6 @@ p {
   margin-left: 10px; /* Additional margin to shift text to the right */
 }
 
-
 .job-description {
   display: none;
   padding: 20px;
@@ -386,7 +385,7 @@ p {
 }
 
 .school-logo {
-  max-width: 60%; /* Responsive size */
+  max-width: 60%; /* Make the logo responsive */
   height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -430,7 +429,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .school-logo {
-    width: 40px; /* Smaller size for logo on mobile */
+    width: 60%; /* Responsive size on mobile */
   }
 
   .timeline-content {
