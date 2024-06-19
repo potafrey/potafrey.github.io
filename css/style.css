@@ -63,10 +63,10 @@ body {
 
 .nav-links li a:before {
   content: '';
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
-  height: 0px;
+  height: 10px;
   width: 0%;
   background: #00bcd4;
   border-radius: 2px;
@@ -81,21 +81,21 @@ body {
   color: #333;
   font-size: 20px; /* Adjust font size for mobile */
   font-weight: bold;
-  padding: 3px 10px;
+  padding: 3px 25px;
   text-decoration: none;
   pointer-events: none;
 }
 
 .hamburger-menu {
+  position:fixed;
   display: none; /* Hide by default */
-  font-size: 24px;
+  font-size: 17px;
   cursor: pointer;
-  margin-left: 20px;
 }
 
 .social {
   display: flex;
-  align-items: center;
+  align-items: right;
   list-style: none;
 }
 
@@ -232,15 +232,21 @@ p {
   .social {
     position: absolute;
     top: 15px;
-    right: 50px; /* Adjust position for alignment */
+    right: 10px; /* Adjust position for alignment */
   }
 
   .name {
     font-size: 18px; /* Adjust font size for mobile */
+    position: relative;
+    left: 10px;
   }
 
   h1 {
     font-size: 2em; /* Adjust font size for mobile */
+  }
+  .social {
+    position: relative;
+    top: -2px;
   }
 }
 
@@ -441,3 +447,4 @@ p {
     padding: 30px 15px 15px; /* Adjust padding for mobile */
   }
 }
+
