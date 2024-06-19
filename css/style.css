@@ -87,9 +87,8 @@ body {
 }
 
 .hamburger-menu {
-  position:fixed;
   display: none; /* Hide by default */
-  font-size: 17px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -209,8 +208,10 @@ p {
     display: none; /* Hide nav links by default on smaller screens */
     flex-direction: column;
     position: absolute;
-    top: 70px;
-    left: 0;
+    margin: auto;
+    top: 68px;
+    left: 0px;
+    right: 0px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -226,19 +227,20 @@ p {
   }
 
   .hamburger-menu {
-    display: block; /* Show hamburger menu on smaller screens */
+    display: inline-block; /* Show hamburger menu on smaller screens */
+    position: absolute;
   }
 
   .social {
     position: absolute;
     top: 15px;
-    right: 10px; /* Adjust position for alignment */
+    right: 0px; /* Adjust position for alignment */
   }
 
   .name {
-    font-size: 18px; /* Adjust font size for mobile */
+    font-size: 20px; /* Adjust font size for mobile */
     position: relative;
-    left: 10px;
+    left: 20px;
   }
 
   h1 {
