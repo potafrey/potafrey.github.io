@@ -330,6 +330,7 @@ p {
   padding: 20px;
   background-color: #fafafa;
   border-top: 1px solid #eee;
+  text-decoration: none;
 }
 
 .dropdown-icon {
@@ -402,6 +403,8 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   margin-top: 30px; /* Add margin to prevent content overlap */
+  text-align: left;
+  text-decoration: none;
 }
 
 .timeline-content h3 {
