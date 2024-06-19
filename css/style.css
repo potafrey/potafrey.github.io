@@ -97,10 +97,10 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-  padding: 5px;
 }
 
 .social li {
+  padding-top: 5px;
   margin: 0 10px; /* Adjust margin for spacing */
 }
 
