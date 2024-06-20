@@ -13,7 +13,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #fff0c9, #d9e6f2); /* Creamy gradient colors */
+  background: linear-gradient(to right, #cadff2, #f2f0e6); /* Creamy gradient colors */
   color: #333; /* Adjust text color for readability */
   overflow-x: hidden;
 }
@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #fff0c9, #d9e6f2);
+  background: linear-gradient(to right, #cadff2, #f2f0e6);
   padding: 15px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000; /* Ensure navbar is above other content */
@@ -63,10 +63,10 @@ body {
 
 .nav-links li a:before {
   content: '';
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
-  height: 10px;
+  height: 2px;
   width: 0%;
   background: #00bcd4;
   border-radius: 2px;
@@ -362,16 +362,6 @@ p {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px 0;
-}
-
-.timeline:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background: #e9ecef;
 }
 
 .timeline-item {

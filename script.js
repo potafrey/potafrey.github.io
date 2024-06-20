@@ -61,5 +61,27 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   
   
-  
+});
+
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+
+window.addEventListener('load', () => {
+  // Ensure the About section is visible immediately on page load
+  const aboutSection = document.getElementById('about');
+  aboutSection.classList.add('visible');
+});
+
+window.addEventListener('scroll', () => {
+  const skillsSection = document.getElementById('skills');
+  const skillsPosition = skillsSection.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.7;
+
+  if (skillsPosition < screenPosition) {
+    skillsSection.classList.add('visible');
+  } else {
+    skillsSection.classList.remove('visible');
+  }
 });

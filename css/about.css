@@ -1,0 +1,75 @@
+/* About Section */
+#about {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #cadff2, #f2f0e6);
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #about h1 {
+    font-size: 2.5em;
+    color: #00bcd4;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Skills Section */
+  #skills {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #cadff2, #f2f0e6);
+  }
+
+  #skills h2 {
+    font-size: 2.5em;
+    color: #00bcd4;
+    margin-bottom: 40px;
+  }
+
+.about-skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.about-skills-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+    margin-bottom: 0.5em;
+    width: 15%;
+}
+
+.about-skills-card img {
+    width: 50px;
+}
+
+.about-skills-card h6 {
+    margin-top: 0.5em;
+}
+  
+/* Scroll Animation */
+#skills {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#skills.visible {
+  opacity: 1;
+}
