@@ -196,6 +196,7 @@ p {
 
 .job, .school {
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .job h3, .school h3 {
