@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeffrey Chan | Projects</title>
+  <title>Jeffrey Chan | Contact</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
   <script src="https://kit.fontawesome.com/4b315fa201.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
@@ -29,8 +30,29 @@
       <i class="fas fa-bars"></i>
     </div>
   </div>
+
   <div id="intro">
-    This page is like me: A work in progress :)
+    <h1>Contact Me!</h1>
+    <div class="container">
+
+        <!-- Formspree form integration -->
+        <form action="https://formspree.io/f/movaaqzw" method="POST">
+            <label for="name">Name<span class="star">*</span>:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="contact">Contact Number<span class="star">*</span>:</label>
+            <input type="text" id="contact" name="contact" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message<span class="star">*</span>:</label>
+            <textarea id="message" name="message" rows="3" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
     </div>
   </body>
   </html>

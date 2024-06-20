@@ -3,7 +3,7 @@
     padding: 100px 20px;
     text-align: center;
     background: linear-gradient(to right, #cadff2, #f2f0e6);
-    min-height: 100vh; /* Full viewport height */
+    min-height: 90vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
