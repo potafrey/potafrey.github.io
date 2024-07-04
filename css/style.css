@@ -337,7 +337,8 @@ h4 {
 
 .job-info {
   flex-grow: 1;
-  margin-left: 10px; /* Additional margin to shift text to the right */
+  margin-left: 10px; 
+  text-decoration: none;
 }
 
 .job-description {
