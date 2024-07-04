@@ -204,6 +204,10 @@ p {
   margin-bottom: 5px;
 }
 
+h4 {
+  text-decoration: none
+}
+
 @media screen and (max-width: 768px) {
   .nav-links {
     display: none; /* Hide nav links by default on smaller screens */
